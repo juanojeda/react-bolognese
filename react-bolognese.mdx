@@ -1,0 +1,294 @@
+import { themes, Notes, Split } from 'mdx-deck';
+
+export const theme = themes.yellow;
+
+# React Bolognese
+
+---
+
+### @juan.ojeda
+
+Sr UI Developer
+
+Food Enthusiast
+
+---
+
+## What this talk isn't
+
+- An intro to an npm package
+
+```
+yarn add bolognese
+```
+
+<Notes>It's a html5 editor package, btw</Notes>
+
+---
+
+## What this talk is
+
+- A primer on Atomic Design
+- A way to help you unravel the spaghetti
+- An analogy stretched too far
+
+<Notes>
+
+- How I approach atomic design
+- A way to think
+- unravel the spaghetti code _badoom tish_
+- a guide for how granular to go with components
+- I'm using spaghetti bolognese as an analogy for UI dev
+
+</Notes>
+
+---
+
+## Atomic Design
+
+<Notes>
+
+- show of hands, how many people know what atomic design is?
+- buzz word for component development and design
+
+</Notes>
+
+---
+
+## Atomic Design
+
+- A design / development methodology
+- A mental model for components
+
+---
+
+### Atomic Design
+
+- Atoms
+- Molecules
+- Organisms
+- ... (templates/pages) ...
+
+<Notes>
+
+- atoms
+- they make up Molecules
+- they both make up organisms
+- then we can build templates and pages
+- they break the atomic analogy, but that's ok
+
+</Notes>
+
+---
+
+## The problem with atoms...
+
+<Notes>
+
+- Problem with Atom terminology
+- Forces you to think at the smallest granular level
+- Sometimes you go smaller than necessary
+- How deep should we go?
+
+</Notes>
+
+---
+
+<img
+  src="https://media.tenor.com/images/5c0c6f260d8731228b37c890ee89f157/tenor.gif"
+  style="width: 80%; margin: 0 auto;"
+/>
+
+<Notes>You can always go deeper</Notes>
+
+---
+
+## How big is an atom?
+
+---
+
+![](https://www.coles.com.au/inspireandcreate/curtismince/~/media/images/colesa/inspireandcreate/recipes/curtis%20mince/spaghetti-bolognese.jpg)
+
+---
+
+### Convenience store dinner
+
+- microwave spaghetti bolognese
+
+<Notes>
+
+- most basic component: the whole thing
+- heat, peel and eat
+
+- Pros: quick, low effort
+
+- Cons:
+- Not very reusable
+- Not very 'tweakable'
+
+</Notes>
+
+---
+
+### Easy store-bought dinner
+
+- store-bought bolognese ragu
+- packet fresh spaghetti
+
+<Notes>
+
+- Next level up in complexity
+- two components
+- heat the pasta in some boiling water
+- heat the ragu in a saucepan
+- serve
+
+- Pros: quick, low effort, additive tweaks
+- Cons: not that reusable, no subtractive tweaks
+
+</Notes>
+
+---
+
+<Split>
+
+### Home cooked dinner: Components
+
+- cooked spaghetti
+- bolognese ragu
+
+</Split>
+
+<Notes>
+
+- Next level up in complexity
+- Still the same two components on the plate
+- Since we are making it at home, we can look deeper
+
+</Notes>
+
+---
+
+<Split>
+
+### Home cooked dinner: Atoms
+
+<div style={{textAlign: 'left', paddingLeft: '4rem'}}>
+
+- dry spaghetti
+- minced beef
+- onion
+- carrot
+- celery
+- garlic
+- tomato paste
+- passata
+
+</div>
+
+</Split>
+
+<Notes>
+
+- atom list looks like ingredients
+- you don't just throw these all together
+- combine different atoms to make molecules, organisms
+- eg. dry spaghetti plus boiling water and time makes your cooked spaghetti
+- eg. your onion, carrot celery will make your "soffrito", a molecule
+
+</Notes>
+
+---
+
+<Split>
+
+### From-scratch dinner: Components
+
+- cooked spaghetti
+- bolognese ragu
+
+</Split>
+
+<Notes>
+
+- Again, same components, but fancier
+- If youre going all out you make it from scratch
+- Break it down as far as you can
+
+</Notes>
+
+---
+
+<Split>
+
+### From-scratch dinner: Atoms
+
+<div style={{textAlign: 'left', paddingLeft: '4rem'}}>
+
+- fresh eggs
+- tipo 00 flour
+- beef chuck
+- pork shoulder
+- veal short rib
+- onion
+- carrot
+- celery
+- garlic
+- fresh tomatoes
+- milk
+
+</div>
+
+</Split>
+
+<Notes>
+
+- Now the ingredients list is longer
+- Pasta from scratch
+- You'll need a mincer to use these meat atoms
+- you'll need a lot of time to use the tomato atom to make tomato paste and passata
+- Probably overkill for your weeknight dinner, but could be good for a special occasion
+
+</Notes>
+
+---
+
+## How big is an atom?
+
+---
+
+<img
+  src="https://media1.tenor.com/images/9334969a5d885c05fb472ab7838f04de/tenor.gif"
+  style="height: 40vw"
+/>
+
+<Notes>
+
+It depends on a few things:
+
+- what you want to reuse
+- how much time you have
+- what your capabilities are
+- system support, how much you might want to tweak in the future, etc.
+
+</Notes>
+
+---
+
+## Code and Recipe time
+
+---
+
+## Summary:
+
+- Use atoms/molecules/organisms
+- Components should be as big as you need
+- Cut down components for reuse/remix/maintainability
+- Folder structure helps
+
+---`
+
+<img
+  src="https://media1.tenor.com/images/dbc331523caeb9c4dac5dad10067ab2c/tenor.gif?itemid=4665979"
+  style="height: 40vw"
+/>
